@@ -1,33 +1,35 @@
 # Terentiy Gatsukov
 
-**Senior .NET Backend Engineer · Distributed Systems · iGaming · BIM Automation**
+### Senior .NET Backend Engineer
 
-I build backend services and engineering tools with C# and .NET. My public work focuses on explicit architecture, performance, testable domain logic, and repeatable delivery.
+**Durable workflows · Real-time systems · Game mathematics · BIM automation**
 
-[Engineering portfolio](https://lilter96.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/terentiy-gatsukov-048694224/)
+I build services and engineering tools with C# and .NET. My work focuses on the boundaries where software becomes difficult: state that survives a process crash, concurrent streams with bounded memory, reproducible probability models, and geometry inside engineering applications.
 
-### Selected engineering work
+[Portfolio website](https://lilter96.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/terentiy-gatsukov-048694224/) · [Engineering walkthroughs](docs/ENGINEERING.md)
 
-| Project | What to review |
-| --- | --- |
-| **[.NET Engineering Portfolio](https://github.com/lilter96/portfolio)** | .NET 10 / React 19 monorepo; PostgreSQL, Redis, Testcontainers, API versioning, ADRs, and backend/frontend CI. |
-| **[Slot Math Lab](https://github.com/lilter96/slot-math-lab)** | .NET 10 / React 19 graph editor, exact rational and Monte Carlo interpreters, deterministic RNG; 704 core tests passed locally. Research prototype; full CI needs follow-up. |
-| **[AccessRoute for Revit](https://github.com/lilter96/access-route-revit)** | Cable routing with a BVH spatial index and Dijkstra; versioned storage; Revit 2021–2025 adapters; WPF/MVVM. |
-| **[ModelGuard for Revit](https://github.com/lilter96/model-guard-revit)** | BIM parameter contracts, equipment references, and mark updates with transaction and worksharing ownership checks. |
-| **[TGSlots](https://github.com/lilter96/tgslots)** | TypeScript/Bun, PixiJS, modular slot-game mathematics and Monte Carlo tooling; 736 tests and lint passed locally. Known simulation-runner typecheck issue. |
-| **[Realtime Chat](https://github.com/lilter96/realtime_chat)** | ASP.NET Core / SignalR / React; strongly typed hub, rooms, reconnect, WebSocket/SSE fallback, and Azure deployment configuration. |
-| **[StatsHub](https://github.com/lilter96/statshub)** | Revenue dashboard with CQRS/MediatR, EF Core/PostgreSQL, Redis caching, SignalR updates, and React. |
+## Six projects, six engineering perspectives
 
-### Evidence and boundaries
+| Project | What it demonstrates | Verified evidence |
+| --- | --- | --- |
+| **[JobFinder](https://github.com/lilter96/jobfinder-showcase)** | .NET 10 / PostgreSQL / Wolverine / Blazor. Durable workflows, transactional outbox, revision witnesses, typed LLM recipes, and reconciliation when an external outcome is unknown. | **939 selected tests**, including PostgreSQL transport and process-termination recovery; [verification](https://github.com/lilter96/jobfinder-showcase/blob/main/docs/PUBLICATION-VERIFICATION.md). |
+| **[Slot Math Lab](https://github.com/lilter96/slot-math-lab)** | Exact rational and Monte Carlo interpreters, deterministic RNG streams, graph compilation and a React editor. | **704 core tests** passed locally. Research prototype; full CI still needs follow-up. |
+| **[Realtime Primitives](https://github.com/lilter96/dotnet-realtime-primitives)** | Circuit breakers, typed HTTP failures, retained audio replay and a bounded, nonblocking flight recorder. Extracted from a larger personal application. | **89 offline tests**, public CI; [contracts and limits](https://github.com/lilter96/dotnet-realtime-primitives#readme). |
+| **[AccessRoute for Revit](https://github.com/lilter96/access-route-revit)** | BVH spatial search, Dijkstra routing, versioned storage, Revit 2021–2025 adapters and WPF/MVVM. | **68 core/ViewModel tests**; indexed queries **~11.2× faster** on a synthetic benchmark. [Raw results](https://github.com/lilter96/access-route-revit/blob/main/docs/evidence/benchmark-2026-10-07.json). |
+| **[TGSlots](https://github.com/lilter96/tgslots)** | TypeScript / Bun / Elysia / PixiJS 8 / React. Modular game math, rendering and Monte Carlo tooling. | **736 tests** and lint passed locally. Simulation-runner typecheck needs follow-up. |
+| **[Engineering Portfolio](https://github.com/lilter96/portfolio)** | Versioned .NET 10 content API, PostgreSQL/Redis, React 19, Testcontainers, Docker, ADRs and CI. This profile's delivery monorepo. | **56 backend + 43 frontend tests**, isolated database fixtures; [architecture decisions](https://github.com/lilter96/portfolio/tree/main/docs/adr). |
 
-- **Modern .NET delivery:** the portfolio includes isolated integration tests, Docker, CI, coverage collection, and architecture decision records.
-- **Routing performance:** on a synthetic benchmark of 7,080 segments and 1,500 nearest-segment queries, AccessRoute recorded **4.85 ms indexed vs 68.41 ms full scan**. Routing for 500 devices took **115 ms** in the core. [Method and raw results](https://github.com/lilter96/access-route-revit/blob/main/docs/evidence/benchmark.json).
-- **BIM portfolio experience:** AccessRoute and ModelGuard share a core and ViewModel suite of **68 tests**. These are portfolio previews; **execution inside Revit and production deployment are not yet verified**. They demonstrate Revit API work, not commercial Tekla experience.
-- **Enterprise integration:** [MekashronTest](https://github.com/lilter96/MekashronTest) is an older test assignment showing Umbraco and WCF/SOAP integration.
+## More breadth, with clear boundaries
 
-### How I work
+- **BIM model integrity:** [ModelGuard](https://github.com/lilter96/model-guard-revit) covers parameter contracts, transactional mark updates and worksharing ownership. It shares the AccessRoute core/test suite. **Revit-host execution is not yet verified** for either plugin; this is practical portfolio experience, not commercial Tekla experience.
+- **Enterprise integration:** [MekashronTest](https://github.com/lilter96/MekashronTest) is an older assignment with Umbraco and WCF/SOAP integration.
+- **Earlier real-time work:** [Realtime Chat](https://github.com/lilter96/realtime_chat) shows SignalR and React integration; [StatsHub](https://github.com/lilter96/statshub) adds CQRS, caching and a dashboard. These are supporting demos, with narrower scope than the projects above.
 
-I use AI-assisted development, with architecture, constraints, verification, and final review remaining my responsibility. I value reviewable changes, documented trade-offs, and tests that establish behavior rather than repeat implementation details.
+## How I work
 
-**Core stack:** C# · .NET · ASP.NET Core · PostgreSQL · Redis · SignalR · Docker · GitHub Actions  
-**Additional engineering:** React / TypeScript · Revit API · WPF / MVVM
+I use AI-assisted development. Architecture, constraints, verification and final review remain my responsibility. I document trade-offs and distinguish a passing test, a synthetic benchmark and a production result.
+
+**Core:** C# · .NET · ASP.NET Core · PostgreSQL · Redis · Wolverine · Docker · GitHub Actions  
+**Across the stack:** React / TypeScript · Blazor · Revit API · WPF / MVVM · deterministic simulation
+
+<sub>Verification recorded on 2026-10-07. Test counts describe different suites, not comparable project scores or production reliability guarantees.</sub>
