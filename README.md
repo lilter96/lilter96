@@ -4,9 +4,11 @@
 
 **Durable workflows · Real-time systems · Game mathematics · BIM automation**
 
-I build services and engineering tools with C# and .NET. My work focuses on the boundaries where software becomes difficult: state that survives a process crash, concurrent streams with bounded memory, reproducible probability models, and geometry inside engineering applications.
+I have 5+ years of commercial experience across gaming, marketplace SaaS, transportation and IoT. At Custom Games Studio (November 2023–July 2026), my work included bet processing at 5,000+ RPS, a 6× calculation speedup and approximately 15 game backends brought to production. [Current CVs and commercial experience](https://lilter96.github.io/portfolio/#experience).
 
-[Portfolio website](https://lilter96.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/terentiy-gatsukov-048694224/) · [Engineering walkthroughs](docs/ENGINEERING.md)
+My public projects explore durable state, concurrent streams, reproducible probability models and geometry inside engineering applications. Commercial results and portfolio verification are presented separately.
+
+[Portfolio website](https://lilter96.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/terentiy-gatsukov/) · [Email](mailto:lilter96dotnet@gmail.com) · [Telegram](https://t.me/lilter96) · [Engineering walkthroughs](docs/ENGINEERING.md)
 
 ## Six projects, six engineering perspectives
 
