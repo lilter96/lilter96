@@ -11,8 +11,10 @@ I build backend services and engineering tools with C# and .NET. My public work 
 | Project | What to review |
 | --- | --- |
 | **[.NET Engineering Portfolio](https://github.com/lilter96/portfolio)** | .NET 10 / React 19 monorepo; PostgreSQL, Redis, Testcontainers, API versioning, ADRs, and backend/frontend CI. |
+| **[Slot Math Lab](https://github.com/lilter96/slot-math-lab)** | .NET 10 / React 19 graph editor, exact rational and Monte Carlo interpreters, deterministic RNG; 704 core tests passed locally. Research prototype; full CI needs follow-up. |
 | **[AccessRoute for Revit](https://github.com/lilter96/access-route-revit)** | Cable routing with a BVH spatial index and Dijkstra; versioned storage; Revit 2021–2025 adapters; WPF/MVVM. |
 | **[ModelGuard for Revit](https://github.com/lilter96/model-guard-revit)** | BIM parameter contracts, equipment references, and mark updates with transaction and worksharing ownership checks. |
+| **[TGSlots](https://github.com/lilter96/tgslots)** | TypeScript/Bun, PixiJS, modular slot-game mathematics and Monte Carlo tooling; 736 tests and lint passed locally. Known simulation-runner typecheck issue. |
 | **[Realtime Chat](https://github.com/lilter96/realtime_chat)** | ASP.NET Core / SignalR / React; strongly typed hub, rooms, reconnect, WebSocket/SSE fallback, and Azure deployment configuration. |
 | **[StatsHub](https://github.com/lilter96/statshub)** | Revenue dashboard with CQRS/MediatR, EF Core/PostgreSQL, Redis caching, SignalR updates, and React. |
 
