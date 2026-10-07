@@ -34,7 +34,7 @@ On 2026-10-07, a synthetic 7,080-segment/1,500-query run measured 5.3273 ms inde
 
 [Source and verification notes](https://github.com/lilter96/tgslots)
 
-Review the modular game packages, state transitions and Monte Carlo tooling, then the PixiJS rendering boundary. The actual stack is TypeScript/Bun/Elysia/PixiJS/React. It is not evidence of an ASP.NET/SignalR/Hangfire casino platform. Locally, 736 tests and lint passed; the simulation runner has a known Worker typing issue. The API uses prototype in-memory state.
+Review the modular game packages, state transitions and Monte Carlo tooling, then the PixiJS rendering boundary. The actual stack is TypeScript/Bun/Elysia/PixiJS/React. It is not evidence of an ASP.NET/SignalR/Hangfire casino platform. Locally, 736 tests, all workspace typechecks and lint passed after explicitly supplying Node worker typings. The API uses prototype in-memory state.
 
 ## Full-stack delivery — Portfolio
 
