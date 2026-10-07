@@ -21,6 +21,9 @@ I build services and engineering tools with C# and .NET. My work focuses on the 
 
 ## More breadth, with clear boundaries
 
+- **C# + Go systems:** [Trading Systems Lab](https://github.com/lilter96/trading-systems-lab) covers order state, protobuf/gRPC contracts, PostgreSQL audit immutability and an independent emergency watchdog. **151 .NET tests passed, 1 optional benchmark skipped**; Go watchdog tests passed. No live exchange or profitability claim.
+- **Python + LLM/media:** [Signal Processing Lab](https://github.com/lilter96/signal-processing-lab) shows async parsing, persisted campaigns, dry-run execution and risk invariants. **340 offline tests passed**; live providers and screener acceptance were not verified.
+
 - **BIM model integrity:** [ModelGuard](https://github.com/lilter96/model-guard-revit) covers parameter contracts, transactional mark updates and worksharing ownership. It shares the AccessRoute core/test suite. **Revit-host execution is not yet verified** for either plugin; this is practical portfolio experience, not commercial Tekla experience.
 - **Enterprise integration:** [MekashronTest](https://github.com/lilter96/MekashronTest) is an older assignment with Umbraco and WCF/SOAP integration.
 - **Earlier real-time work:** [Realtime Chat](https://github.com/lilter96/realtime_chat) shows SignalR and React integration; [StatsHub](https://github.com/lilter96/statshub) adds CQRS, caching and a dashboard. These are supporting demos, with narrower scope than the projects above.

@@ -42,6 +42,12 @@ Review the modular game packages, state transitions and Monte Carlo tooling, the
 
 Read versioned endpoints, cache/health boundaries and the integration fixtures. The content API and React website demonstrate delivery discipline, not casino mathematics. On 2026-10-07, 56 backend tests and 43 frontend tests passed; endpoint smoke tests now use isolated PostgreSQL/Redis fixtures. GitHub Pages serves curated content without depending on a separately deployed API. Contact remains a real email/LinkedIn link in that mode.
 
+## Cross-language execution systems and Python signal processing
+
+[Trading Systems Lab](https://github.com/lilter96/trading-systems-lab) adds C#/Go and shared protobuf contracts. Read order state and audit immutability, then compare the engine with the independent watchdog. The public suite requires a disposable PostgreSQL database: 151 tests passed, one optional memory benchmark skipped. The fixture loads the actual deployment trigger and verifies both EF and direct SQL mutation rejection. Go watchdog tests passed. The complete deployed system and live exchange behavior remain unverified.
+
+[Signal Processing Lab](https://github.com/lilter96/signal-processing-lab) adds Python async orchestration, typed LLM/media parsing, SQLite campaign persistence, risk rules and dry-run execution. Its sanitized snapshot passed 340 offline tests. Personal account configuration, harvested corpus, provider recordings and performance exports are excluded. Neither profitable signal quality nor real-provider acceptance is claimed.
+
 ## Supporting older work
 
 - [MekashronTest](https://github.com/lilter96/MekashronTest): CMS and WCF/SOAP integration in an assignment.
