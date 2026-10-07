@@ -30,11 +30,49 @@ Trace a nearest-segment query through the BVH and a route through Dijkstra. Then
 
 On 2026-10-07, a synthetic 7,080-segment/1,500-query run measured 5.3273 ms indexed versus 59.873 ms exhaustive, with zero distance error; 500 device routes succeeded in 134.8231 ms. Timings depend on machine and input. The benchmark runs outside Revit. Host execution, production deployment and Tekla API experience are not established by these results.
 
-## Product implementation and game tooling — TGSlots
+## Playable games, probability models and cross-language execution — TGSlots
 
-[Source and verification notes](https://github.com/lilter96/tgslots)
+[Source and screenshots](https://github.com/lilter96/tgslots) ·
+[Mathematical walkthrough](https://github.com/lilter96/tgslots/blob/master/docs/mathematics.md) ·
+[Backend verification](https://github.com/lilter96/tgslots/blob/master/docs/x7-verification.md) ·
+[Real gameplay promos](https://lilter96.github.io/portfolio/#showreel)
 
-Review the modular game packages, state transitions and Monte Carlo tooling, then the PixiJS rendering boundary. The actual stack is TypeScript/Bun/Elysia/PixiJS/React. It is not evidence of an ASP.NET/SignalR/Hangfire casino platform. Locally, 736 tests, all workspace typechecks and lint passed after explicitly supplying Node worker typings. The API uses prototype in-memory state.
+Four games expose different mathematical and state-management problems: classic
+paylines, interactive picks, combat cascades with giant sticky WILDs, and Hold &
+Spin with column boosters. The runtime stack is TypeScript/Bun/Elysia/PixiJS 8/
+GSAP, with a React marketing frontend. X7 additionally supports Go + RabbitMQ.
+
+For a 15-minute review:
+
+1. Read the mathematical walkthrough's separation of probability sampling,
+   deterministic evaluation, feature state and paid-result accounting.
+2. Trace the shared payline trie or cluster BFS, then Le Militare's position
+   weights: a five-row giant connects across five cells but counts as one symbol.
+3. Compare Woodland's actual game with the separate Python analytical reference.
+   The first repeated weighted draw and free-spin retriggers both affect expected
+   return; the report derives approximately 96.0006% normal-round RTP.
+4. Inspect X7's common seeded executor, Bun local server and Go/RabbitMQ path.
+   The math worker never owns the wallet; request identity, revision and pending
+   seed preserve an outcome across retries.
+5. Watch the matching gameplay and inspect the API tests for duplicate charges,
+   complete bought bonuses, stale revisions and unavailable upstreams.
+
+On 2026-10-08, **792 workspace tests**, typechecks and lint passed; the web-client
+production build and **7 Go tests under the race detector** passed. Live smoke
+checks completed X7 bonuses through the full API in both backend modes. All
+three other games passed state + spin checks on both API instances.
+
+Le Militare's **81.6M complete verification rounds** use seed streams separate
+from calibration while executing the actual game engine. This is held-out Monte
+Carlo verification, not a separately implemented cluster/combat evaluator.
+Woodland's Python reference is independent of its RNG and evaluator. X7's stored
+report separates 5M normal rounds from 1M purchases and normalizes purchase return
+by its actual cost. Alias sampling has documented finite-precision thresholds;
+RTP intervals and point estimates are not exact probability claims.
+
+The website hosts videos; interactive play currently requires a running API.
+Both X7 modes retain in-memory demo sessions. They do not provide durable wallet
+accounting across process restarts or a certified real-money deployment.
 
 ## Full-stack delivery — Portfolio
 
