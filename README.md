@@ -41,7 +41,7 @@ The public projects below provide separate, inspectable engineering evidence.
 
 ## Game engineering you can see and review
 
-[![TGSlots: real Le Militare gameplay with giant sticky WILD columns](https://raw.githubusercontent.com/lilter96/tgslots/master/docs/media/le-militare.webp)](https://lilter96.github.io/portfolio/#showreel)
+[![Nine Lives: the new TGSlots flagship, cat Reaper and cluster cascades](https://raw.githubusercontent.com/lilter96/tgslots/master/docs/media/nine-lives.webp)](https://github.com/lilter96/tgslots/blob/master/memory/nine-lives-gdd.md)
 
 **Nine Lives** — new flagship: cat-Reaper collection, cluster cascades and a carried bonus multiplier.  
 **Ancient Dragon** — classic paylines, mystery symbols and free spins.  
