@@ -41,7 +41,7 @@ The public projects below provide separate, inspectable engineering evidence.
 
 ## Game engineering you can see and review
 
-[![Nine Lives: the new TGSlots flagship, cat Reaper and cluster cascades](https://raw.githubusercontent.com/lilter96/tgslots/master/docs/media/nine-lives.webp)](https://github.com/lilter96/tgslots/blob/master/memory/nine-lives-gdd.md)
+[![Nine Lives: the new TGSlots flagship, cat Reaper and cluster cascades](https://raw.githubusercontent.com/lilter96/tgslots/master/docs/media/nine-lives.webp)](https://lilter96.github.io/portfolio/#showreel)
 
 **Nine Lives** — new flagship: cat-Reaper collection, cluster cascades and a carried bonus multiplier.  
 **Ancient Dragon** — classic paylines, mystery symbols and free spins.  
@@ -49,15 +49,20 @@ The public projects below provide separate, inspectable engineering evidence.
 **Le Militare** — combat cascades, persistent multipliers and giant sticky WILDs.  
 **X7 Club** — locked coin prizes, Hold & Spin and column boosters.
 
-Nine Lives is available in source and local demo; its new film is in preparation.
-The currently published videos show actual outcomes from the earlier four games. The source explains the RNG boundary,
+[Nine Lives · 1440p promo](https://lilter96.github.io/portfolio/media/slots/nine-lives-promo.mp4) ·
+[LinkedIn edit](https://lilter96.github.io/portfolio/media/slots/nine-lives-linkedin.mp4) ·
+[Original capture](https://github.com/lilter96/tgslots/releases/tag/nine-lives-media-2026-10-08).
+Real normal-speed gameplay; 120 FPS landscape export from approximately 77 actual
+captured frames/s. Licensed music, no game sound effects.
+
+The showcase now includes all five games, with Nine Lives first. The source explains the RNG boundary,
 weighted samplers, payline trie, cluster BFS, bonus states, wager normalization
 and complete-round verification. Le Militare's verification uses held-out seed
 streams on the actual engine; Woodland additionally has a separate Python
 analytical reference. Test results, sampling estimates and analytical expectations
 are identified individually.
 
-[Watch the existing four-game promo](https://lilter96.github.io/portfolio/media/slots/tgslots-reel.mp4) ·
+[Watch the five-game promo](https://lilter96.github.io/portfolio/media/slots/tgslots-reel.mp4) ·
 [Read the mathematics](https://github.com/lilter96/tgslots/blob/master/docs/mathematics.md) ·
 [Review both X7 backend modes](https://github.com/lilter96/tgslots/blob/master/docs/x7-verification.md)
 
