@@ -37,9 +37,9 @@ On 2026-10-07, a synthetic 7,080-segment/1,500-query run measured 5.3273 ms inde
 [Backend verification](https://github.com/lilter96/tgslots/blob/master/docs/x7-verification.md) ·
 [Real gameplay promos](https://lilter96.github.io/portfolio/#showreel)
 
-Four games expose different mathematical and state-management problems: classic
+Five games expose different mathematical and state-management problems: classic
 paylines, interactive picks, combat cascades with giant sticky WILDs, and Hold &
-Spin with column boosters. The runtime stack is TypeScript/Bun/Elysia/PixiJS 8/
+Spin with column boosters, plus Nine Lives collector cascades. The runtime stack is TypeScript/Bun/Elysia/PixiJS 8/
 GSAP, with a React marketing frontend. X7 additionally supports Go + RabbitMQ.
 
 For a 15-minute review:
@@ -57,7 +57,12 @@ For a 15-minute review:
 5. Watch the matching gameplay and inspect the API tests for duplicate charges,
    complete bought bonuses, stale revisions and unavailable upstreams.
 
-On 2026-10-08, **792 workspace tests**, typechecks and lint passed; the web-client
+Nine Lives adds shared-engine collector cascades and a common revisioned Bun
+session client. Its stored 10M base + 1M purchase audit reports 97.3574% normal
+and 96.0103% purchase return; the base 95% interval excludes the 96% target.
+[Verification and limits](https://github.com/lilter96/tgslots/blob/master/docs/nine-lives-verification.md).
+
+On 2026-10-08, **812 workspace tests**, typechecks and lint passed; the web-client
 production build and **7 Go tests under the race detector** passed. Live smoke
 checks completed X7 bonuses through the full API in both backend modes. All
 three other games passed state + spin checks on both API instances.

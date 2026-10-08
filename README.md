@@ -33,7 +33,7 @@ The public projects below provide separate, inspectable engineering evidence.
 | Project                                                                           | Engineering perspective                                                                                                                                                                                 | Evidence to inspect                                                                                                                                                                                                                                              |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **[JobFinder](https://github.com/lilter96/jobfinder-showcase)**                   | **Durable .NET workflows and AI integration.** .NET 10 / PostgreSQL / Wolverine / Blazor; transactional outbox, revision witnesses, typed LLM recipes and reconciliation of uncertain external effects. | **939 selected publication tests**, including actual PostgreSQL transport and process-termination recovery. [Verification](https://github.com/lilter96/jobfinder-showcase/blob/main/docs/PUBLICATION-VERIFICATION.md).                                           |
-| **[TGSlots](https://github.com/lilter96/tgslots)**                                | **Playable games, probability models and cross-language backend boundaries.** Four games; TypeScript/Bun, PixiJS 8, GSAP, shared math and simulation tooling; X7 supports Bun or **Go + RabbitMQ**.     | **792 workspace tests**, **7 Go race-tested cases**; Le Militare has **81.6M complete verification rounds**. [Math walkthrough](https://github.com/lilter96/tgslots/blob/master/docs/mathematics.md) · [Promos](https://lilter96.github.io/portfolio/#showreel). |
+| **[TGSlots](https://github.com/lilter96/tgslots)**                                | **Playable games, probability models and cross-language backend boundaries.** Five games; **Nine Lives flagship**; TypeScript/Bun, PixiJS 8, GSAP, shared math and simulation tooling; X7 supports Bun or **Go + RabbitMQ**.     | **812 workspace tests**, **7 Go race-tested cases**; Le Militare has **81.6M complete verification rounds**. [Math walkthrough](https://github.com/lilter96/tgslots/blob/master/docs/mathematics.md) · [Promos](https://lilter96.github.io/portfolio/#showreel). |
 | **[Slot Math Lab](https://github.com/lilter96/slot-math-lab)**                    | **Exact and sampled computation in .NET.** Rational distributions and Monte Carlo interpreters, deterministic RNG streams, graph compilation and a React 19 editor.                                     | **704 core tests** verified locally. Research prototype; complete CI/E2E still requires follow-up. [Implementation and scope](https://github.com/lilter96/slot-math-lab#readme).                                                                                 |
 | **[Realtime Primitives](https://github.com/lilter96/dotnet-realtime-primitives)** | **Concurrency and resilience contracts.** .NET 10 circuit breakers, typed HTTP failures, retained audio replay and a bounded, nonblocking flight recorder.                                              | **89 offline tests** and public CI. [Contracts and test map](https://github.com/lilter96/dotnet-realtime-primitives#readme).                                                                                                                                     |
 | **[AccessRoute for Revit](https://github.com/lilter96/access-route-revit)**       | **Geometry and BIM integration.** BVH spatial search, Dijkstra routing, versioned storage, Revit 2021–2025 adapters and WPF/MVVM.                                                                       | **68 shared core/ViewModel tests**; indexed queries **~11.2× faster** in a synthetic benchmark. [Raw evidence](https://github.com/lilter96/access-route-revit/blob/main/docs/evidence/benchmark-2026-10-07.json). Revit-host execution remains unverified.       |
@@ -43,19 +43,21 @@ The public projects below provide separate, inspectable engineering evidence.
 
 [![TGSlots: real Le Militare gameplay with giant sticky WILD columns](https://raw.githubusercontent.com/lilter96/tgslots/master/docs/media/le-militare.webp)](https://lilter96.github.io/portfolio/#showreel)
 
+**Nine Lives** — new flagship: cat-Reaper collection, cluster cascades and a carried bonus multiplier.  
 **Ancient Dragon** — classic paylines, mystery symbols and free spins.  
 **Woodland Whisper** — interactive card picks and independently calculated expected return.  
 **Le Militare** — combat cascades, persistent multipliers and giant sticky WILDs.  
 **X7 Club** — locked coin prizes, Hold & Spin and column boosters.
 
-The public videos show actual game outcomes. The source explains the RNG boundary,
+Nine Lives is available in source and local demo; its new film is in preparation.
+The currently published videos show actual outcomes from the earlier four games. The source explains the RNG boundary,
 weighted samplers, payline trie, cluster BFS, bonus states, wager normalization
 and complete-round verification. Le Militare's verification uses held-out seed
 streams on the actual engine; Woodland additionally has a separate Python
 analytical reference. Test results, sampling estimates and analytical expectations
 are identified individually.
 
-[Watch the four-game promo](https://lilter96.github.io/portfolio/media/slots/tgslots-reel.mp4) ·
+[Watch the existing four-game promo](https://lilter96.github.io/portfolio/media/slots/tgslots-reel.mp4) ·
 [Read the mathematics](https://github.com/lilter96/tgslots/blob/master/docs/mathematics.md) ·
 [Review both X7 backend modes](https://github.com/lilter96/tgslots/blob/master/docs/x7-verification.md)
 
