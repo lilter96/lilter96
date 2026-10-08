@@ -49,11 +49,12 @@ The public projects below provide separate, inspectable engineering evidence.
 **Le Militare** — combat cascades, persistent multipliers and giant sticky WILDs.  
 **X7 Club** — locked coin prizes, Hold & Spin and column boosters.
 
-[Nine Lives · 1440p promo](https://lilter96.github.io/portfolio/media/slots/nine-lives-promo.mp4) ·
-[LinkedIn edit](https://lilter96.github.io/portfolio/media/slots/nine-lives-linkedin.mp4) ·
+[Nine Lives · 1440p promo](https://lilter96.github.io/portfolio/media/slots/nine-lives-promo-clean.mp4) ·
+[LinkedIn edit](https://lilter96.github.io/portfolio/media/slots/nine-lives-linkedin-clean.mp4) ·
 [Original capture](https://github.com/lilter96/tgslots/releases/tag/nine-lives-media-2026-10-08).
-Real normal-speed gameplay; 120 FPS landscape export from approximately 77 actual
-captured frames/s. Licensed music, no game sound effects.
+Clean gameplay-and-music edit: **1440p / 60 FPS**, rendered frame by frame
+through the unchanged game client using the recorded real API outcomes.
+No editorial text or game sound effects; original capture retained separately.
 
 The showcase now includes all five games, with Nine Lives first. The source explains the RNG boundary,
 weighted samplers, payline trie, cluster BFS, bonus states, wager normalization
