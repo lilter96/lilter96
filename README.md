@@ -71,6 +71,7 @@ The games currently run locally with an API; the portfolio hosts videos.
 
 ## More engineering perspectives
 
+- **Linux desktop + online estimation:** [Headphones Battery for GNOME](https://github.com/lilter96/gnome-headphones-battery) — a GNOME Shell extension: precise Bluetooth LE battery level, remaining listening time from a per-device drain model learned by recursive Bayesian least squares, and a spring-animated Sims cat whose layers are redrawn only when their look changes. **36 gjs tests** and public CI; tested with one headset model.
 - **C# + Go execution boundaries:** [Trading Systems Lab](https://github.com/lilter96/trading-systems-lab) — order state, protobuf/gRPC contracts, PostgreSQL audit immutability and an independent emergency watchdog. **151 .NET tests passed, one optional benchmark skipped**; Go watchdog tests passed.
 - **Python + LLM/media orchestration:** [Signal Processing Lab](https://github.com/lilter96/signal-processing-lab) — async parsing, persisted campaigns, typed model output, dry-run execution and risk invariants. **340 offline tests**; live-provider acceptance remains separate.
 - **BIM model integrity:** [ModelGuard](https://github.com/lilter96/model-guard-revit) — parameter contracts, transaction-safe mark updates and worksharing ownership. Shares AccessRoute's core/test suite; Revit-host execution remains unverified.
@@ -87,4 +88,4 @@ a synthetic benchmark, a mathematical expectation and a commercial result.
 **Backend:** C# / F# · .NET / ASP.NET Core · PostgreSQL / SQL Server · Redis · Kafka / RabbitMQ · outbox / idempotency · Docker · CI/CD  
 **Across the stack:** React / TypeScript · Blazor · Go · Python · Revit API · WPF/MVVM · probability models and deterministic simulation
 
-<sub>Verification records span 2026-10-07–08; the linked reports define each suite's scope. Counts are not comparable project scores or production reliability guarantees.</sub>
+<sub>Verification records span 2026-10-07–20; the linked reports define each suite's scope. Counts are not comparable project scores or production reliability guarantees.</sub>
