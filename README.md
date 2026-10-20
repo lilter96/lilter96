@@ -71,13 +71,34 @@ The games currently run locally with an API; the portfolio hosts videos.
 
 ## More engineering perspectives
 
-- **Linux desktop + online estimation:** [Headphones Battery for GNOME](https://github.com/lilter96/gnome-headphones-battery) — a GNOME Shell extension: precise Bluetooth LE battery level, remaining listening time from a per-device drain model learned by recursive Bayesian least squares, and a spring-animated Sims cat whose layers are redrawn only when their look changes. **36 gjs tests** and public CI; tested with one headset model.
-- **Linux desktop + honest statistics:** [Dota Time for GNOME](https://github.com/lilter96/gnome-dota-time) — a GNOME Shell extension that counts time in Dota 2: live matches over Valve's Game State Integration, 60 days of OpenDota history, comparisons that set match clock against match clock until whole days are known, and a Fisher exact test before a win-rate gap is called real; a spring-animated Cairo Roshan goes into aggro after four hours. **38 gjs tests** and public CI; live matches checked with synthetic posts so far.
 - **C# + Go execution boundaries:** [Trading Systems Lab](https://github.com/lilter96/trading-systems-lab) — order state, protobuf/gRPC contracts, PostgreSQL audit immutability and an independent emergency watchdog. **151 .NET tests passed, one optional benchmark skipped**; Go watchdog tests passed.
 - **Python + LLM/media orchestration:** [Signal Processing Lab](https://github.com/lilter96/signal-processing-lab) — async parsing, persisted campaigns, typed model output, dry-run execution and risk invariants. **340 offline tests**; live-provider acceptance remains separate.
 - **BIM model integrity:** [ModelGuard](https://github.com/lilter96/model-guard-revit) — parameter contracts, transaction-safe mark updates and worksharing ownership. Shares AccessRoute's core/test suite; Revit-host execution remains unverified.
 - **Enterprise integration:** [MekashronTest](https://github.com/lilter96/MekashronTest) — an older Umbraco / WCF / SOAP / SQL Server assignment.
 - **Earlier application work:** [Realtime Chat](https://github.com/lilter96/realtime_chat) and [StatsHub](https://github.com/lilter96/statshub) — SignalR, React, CQRS and caching, with narrower demo scope.
+
+## Linux desktop extensions you can see
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/lilter96/gnome-headphones-battery"><img src="https://raw.githubusercontent.com/lilter96/gnome-headphones-battery/main/docs/media/demo.webp" height="400" alt="Headphones Battery: the popup opens, the ring sweeps to 72%, the plumbob drops in and the cat bobs to the music"></a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/lilter96/gnome-dota-time"><img src="https://raw.githubusercontent.com/lilter96/gnome-dota-time/main/docs/media/demo.webp" height="400" alt="Dota Time: the popup opens, the time counts up with the ring to 4 h 21 min, Roshan stomps, then the month chart grows"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/lilter96/gnome-headphones-battery/main/docs/media/cards.png" width="100%" alt="Three states of the headphones popup: listening at 72%, 2% with a tired cat, and an approximate 16% while the cat dozes"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/lilter96/gnome-dota-time/main/docs/media/cards.png" width="100%" alt="Three moments of a Dota day: 1 h 12 min, 3 h 7 min in a match as Invoker, and 4 h 21 min with Roshan in aggro"></td>
+  </tr>
+  <tr>
+    <td valign="top"><b><a href="https://github.com/lilter96/gnome-headphones-battery">Headphones Battery for GNOME</a></b> — precise Bluetooth LE battery level, remaining listening time from a per-device drain model learned by recursive Bayesian least squares, and a spring-animated Sims cat whose layers are redrawn only when their look changes. <b>36 gjs tests</b> and public CI; tested with one headset model.</td>
+    <td valign="top"><b><a href="https://github.com/lilter96/gnome-dota-time">Dota Time for GNOME</a></b> — counts time in Dota 2: live matches over Valve's Game State Integration, 60 days of OpenDota history, comparisons that set match clock against match clock until whole days are known, and a Fisher exact test before a win-rate gap is called real. <b>38 gjs tests</b> and public CI; live matches checked with synthetic posts so far.</td>
+  </tr>
+</table>
+
+<sub>Rendered in throwaway headless GNOME Shells by each repository's capture script. The headphones numbers come from the real estimator; the Dota month is made up. The UI text is Russian.</sub>
 
 ## How I work
 
