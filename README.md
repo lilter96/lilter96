@@ -94,7 +94,7 @@ The games currently run locally with an API; the portfolio hosts videos.
   </tr>
   <tr>
     <td valign="top"><b><a href="https://github.com/lilter96/gnome-headphones-battery">Headphones Battery for GNOME</a></b> — precise Bluetooth LE battery level, remaining listening time from a per-device drain model learned by recursive Bayesian least squares, and a spring-animated Sims cat whose layers are redrawn only when their look changes. <b>36 gjs tests</b> and public CI; tested with one headset model.</td>
-    <td valign="top"><b><a href="https://github.com/lilter96/gnome-dota-time">Dota Time for GNOME</a></b> — counts time in Dota 2: live matches over Valve's Game State Integration, 60 days of OpenDota history, comparisons that set match clock against match clock until whole days are known, and a Fisher exact test before a win-rate gap is called real. <b>38 gjs tests</b> and public CI; live matches checked with synthetic posts so far.</td>
+    <td valign="top"><b><a href="https://github.com/lilter96/gnome-dota-time">Dota Time for GNOME</a></b> — counts time in Dota 2: live matches over Valve's Game State Integration, 60 days of OpenDota history, comparisons that set match clock against match clock until whole days are known, and a Fisher exact test before a win-rate gap is called real. <b>40 gjs tests</b> and public CI; a live ranked match matched OpenDota to the second.</td>
   </tr>
 </table>
 
