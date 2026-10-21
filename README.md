@@ -81,24 +81,29 @@ The games currently run locally with an API; the portfolio hosts videos.
 
 <table>
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://github.com/lilter96/gnome-headphones-battery"><img src="https://raw.githubusercontent.com/lilter96/gnome-headphones-battery/main/docs/media/demo.webp" height="400" alt="Headphones Battery: the popup opens, the ring sweeps to 72%, the plumbob drops in and the cat bobs to the music"></a>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="33%">
       <a href="https://github.com/lilter96/gnome-dota-time"><img src="https://raw.githubusercontent.com/lilter96/gnome-dota-time/main/docs/media/demo.webp" height="400" alt="Dota Time: the popup opens, the time counts up with the ring to 4 h 21 min, Roshan stomps, then the month chart grows"></a>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://github.com/lilter96/gnome-psiphon-tunnel"><img src="https://raw.githubusercontent.com/lilter96/gnome-psiphon-tunnel/main/docs/media/demo.webp" height="400" alt="Psiphon Tunnel: Psiphon finds a server and the mole climbs out with its lamp on, then the stop button asks about the programs using the tunnel and waits for them"></a>
     </td>
   </tr>
   <tr>
     <td align="center"><img src="https://raw.githubusercontent.com/lilter96/gnome-headphones-battery/main/docs/media/cards.png" width="100%" alt="Three states of the headphones popup: listening at 72%, 2% with a tired cat, and an approximate 16% while the cat dozes"></td>
     <td align="center"><img src="https://raw.githubusercontent.com/lilter96/gnome-dota-time/main/docs/media/cards.png" width="100%" alt="Three moments of a Dota day: 1 h 12 min, 3 h 7 min in a match as Invoker, and 4 h 21 min with Roshan in aggro"></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/lilter96/gnome-psiphon-tunnel/main/docs/media/cards.png" width="100%" alt="The tunnel open with Firefox, Claude Code and Codex going through it, the question before closing it, and waiting for them to close"></td>
   </tr>
   <tr>
     <td valign="top"><b><a href="https://github.com/lilter96/gnome-headphones-battery">Headphones Battery for GNOME</a></b> — precise Bluetooth LE battery level, remaining listening time from a per-device drain model learned by recursive Bayesian least squares, and a spring-animated Sims cat whose layers are redrawn only when their look changes. <b>36 gjs tests</b> and public CI; tested with one headset model.</td>
     <td valign="top"><b><a href="https://github.com/lilter96/gnome-dota-time">Dota Time for GNOME</a></b> — counts time in Dota 2: live matches over Valve's Game State Integration, 60 days of OpenDota history, comparisons that set match clock against match clock until whole days are known, and a Fisher exact test before a win-rate gap is called real. <b>40 gjs tests</b> and public CI; a live ranked match matched OpenDota to the second.</td>
+    <td valign="top"><b><a href="https://github.com/lilter96/gnome-psiphon-tunnel">Psiphon Tunnel for GNOME</a></b> — runs Psiphon's console client in a systemd scope of its own, so a Shell crash cannot take the tunnel down, and closes it with SIGTERM and a grace period. Before closing, it finds the programs still using the tunnel by their proxy variables and sockets and offers to wait for them. <b>32 gjs tests</b> against a fake Psiphon and public CI; the whole cycle checked against a copy of the real client.</td>
   </tr>
 </table>
 
-<sub>Rendered in throwaway headless GNOME Shells by each repository's capture script. The headphones numbers come from the real estimator; the Dota month is made up. The UI text is Russian.</sub>
+<sub>Rendered in throwaway headless GNOME Shells by each repository's capture script. The headphones numbers come from the real estimator; the Dota month and the programs in the tunnel are made up. The UI text is Russian.</sub>
 
 ## How I work
 
